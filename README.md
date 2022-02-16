@@ -1,3 +1,3 @@
 # CatWebsiteFlask
 Simple Web Development using HTML, CSS, Python, and Flask
-Simple Website for My Cat, Boo, using HTML Primarily, and Python to Pull From A JSON File. I Used Flask To Integrate Both Together.
+I created this website for my cat, Boo. I used HTML for the user interface, and Python3 (import requests) to pull JSON files for details such as updated weather in our hometown. Lastly, I used Flask to intergrate both languages and to create a local host, thus a website is born.
