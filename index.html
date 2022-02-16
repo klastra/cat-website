@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Boo's Website</title>
+</head>
+    <body>
+    <div id = "top">
+        <h1> Welcome to Boo's website! </h1>
+             <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVUvbRem2j9AdvgLGvGjtiZqirF9mp87LVJ8M1Rmjl_g5-2WaD8NVAuCyO0F3RrsCHVQY&usqp=CAU" alt = "A black cat"/>
+                <ul>
+                     <li> <a href = "#about boo"><em>About Boo</em></a></li>
+                     <li> <a href = "#friends"><em>Boo's Friends</em></a></li>
+                     <li><a href = "#media"><em>Boo's Media</em></a></li>
+                </ul>
+    </div>
+    <div id = "about boo">
+        <table>
+            <h2> Weather in Boo's Hometown:</h2>
+                <p><em>{{weather}}</em></p>
+
+                <th> Today </th>
+                <th> Temperature(F) </th>
+                <th> High </th>
+                <th> Low </th>
+                <th> Humidity </th>
+            <!-- First Row -->
+            <tr>
+                <td> {{date}} </td> <!-- Date -->
+                <td> {{temp}}°F </td> <!-- Temp -->
+                <td> {{temp_high}}°F </td>
+                <td> {{temp_low}}°F </td>
+                <td> {{hum}}% </td>
+            </tr>
+            <!-- Second Row -->
+
+            <tr> </tr>
+        </table>
+
+        <h2> About Boo </h2>
+             <p> Boo is a <a href = "https://en.wikipedia.org/wiki/Domestic_short-haired_cat" target = "_blank">Domestic short-haired cat</a> from Sunnyvale, California. He is currently <strong>three</strong> years old. </p>
+             <p> He is a rescue from San Jose Animal Shelter, and was adopted by Kirsty Lastra. He was four months old when he was adopted.</p>
+            <p> Now, Boo is a big, shy, cat that becomes playful once he is comfortable with you. He likes to play fetch, and run around the patio.</p>
+        <h2> Boo's Likes and Dislikes</h2>
+        <h3>Likes:</h3>
+            <ul>
+                <li> His friends, Kirsty, Gloria, Noel, and Ryan </li>
+                <li> Treats </li>
+                <li> Napping </li>
+                <li> Bugs </li>
+            </ul>
+        <h3>Dislikes:</h3>
+            <ul>
+                <li> Showers </li>
+                <li> Being woken up from his nap </li>
+                <li> Loud noises </li>
+            </ul>
+    </div>
+
+    <div id = "friends">
+        <h2> These Are Boo's Friends! </h2>
+            <p>
+                {% for i in friends %}
+            <ul>
+                <li>{{i}}</li>
+            </ul>
+                {% endfor %}
+            </p>
+    </div>
+
+    <div id = "media">
+        <h2> Boo's Media </h2>
+            <img width = "500" height = "550" src = "https://scontent-sjc3-1.xx.fbcdn.net/v/t1.15752-9/203859279_786470528686030_141079825766081643_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=ae9488&_nc_ohc=smHtPJ7xqbMAX-oDamv&tn=0RfXSle3kej8az7u&_nc_ht=scontent-sjc3-1.xx&oh=e8b25e69032ef5f5a5d0535b50d228ca&oe=60E3FE2F" />
+            <img width = "500" height = "550"src = "https://scontent-sjc3-1.xx.fbcdn.net/v/t1.15752-9/209509620_1252561255173150_2399440309262486873_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=ae9488&_nc_ohc=Y76bCOZZ4CIAX-oejOF&_nc_ht=scontent-sjc3-1.xx&oh=2755d8131acd2cb6cccc271969bc84b7&oe=60E3C211" />
+            <img width = "500" height = "550" src = "https://scontent-sjc3-1.xx.fbcdn.net/v/t1.15752-9/205611494_1198413407298717_2153400728129749205_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=ae9488&_nc_ohc=_j9uXS-TN04AX_SJiys&tn=0RfXSle3kej8az7u&_nc_ht=scontent-sjc3-1.xx&oh=bf4c7256e00d49f6a118ed80f754985a&oe=60E42228"/>
+            <img width = "500" height = "550" src = "https://scontent-sjc3-1.xx.fbcdn.net/v/t1.15752-9/201489301_537561950717435_2677509724464665828_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=ae9488&_nc_ohc=7hOWs02qsQsAX-7JwEx&_nc_ht=scontent-sjc3-1.xx&oh=87a97c6b6826a7f333956540f7193bfe&oe=60E6235C" />
+            <p> Boo  watching me make this website for him.</p>
+    </div>
+    <a href = "#top">Go To Top</a>
+</body>
+</html>
