@@ -1,6 +1,3 @@
-#My first Flask application
-#July 2, 2021
-
 from flask import Flask, render_template
 from datetime import date
 import requests
